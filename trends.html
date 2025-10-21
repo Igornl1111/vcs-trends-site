@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trends Page</title>
+</head>
+<body>
+    <div id="nav">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+       <li><a href="history.html">History</a></li>
+        <li><a href="trends.html">Trends</a></li>
+        </ul>
+    </div>
+    <div id="main">
+        <h1>Modern version control is defined by key trends that extend its role beyond basic code storage:</h1>
+        <h2>GitOps: Version Control Meets DevOps</h2>
+        <p>GitOps is an approach (coined around 2017) that uses Git repositories as the single source of truth for both application code and operational infrastructure configuration (like Kubernetes or cloud settings). Changes to infrastructure are made via a Git commit and a pull request, which then triggers an automated deployment process. This practice improves transparency, reliability, and auditability by applying rigorous versioning and review to infrastructure.</p>
+        <h2>Integration with CI/CD Pipelines</h2>
+        <p>Version control is central to Continuous Integration and Continuous Delivery/Deployment (CI/CD):</p>
+        <ul>
+            <li>Continuous Integration (CI): Frequent merging of code into the main branch triggers automated build and testing processes via tools hooked into the repository. This catches integration issues early.</li>
+            <li>Continuous Delivery/Deployment (CD): The pipeline automatically delivers and deploys changes based on known, tested versions from the VCS. This enables straightforward rollbacks by simply deploying a previous commit.</li>
+        </ul>
+        <h2>Cloud-Based Version Control Platforms</h2>
+        <p>Services like GitHub, GitLab, and Bitbucket host repositories and have become ubiquitous. They build on raw Git functionality by adding:</p>
+        <ul>
+            <li>Easy Collaboration: Web interfaces for code review, commenting, and the standardized Pull Request workflow.</li>
+            <li>Integrated Services: Built-in CI runners (e.g., GitHub Actions, GitLab CI), issue tracking, and project management.</li>
+            <li>Social Coding: Facilitating open-source collaboration through forking, contribution models, and a network effect.</li>
+        </ul>
+        <h2>The Role of AI in Code Management</h2>
+        <p>AI is beginning to augment version control and code review:</p>
+        <ul>
+            <li>AI-assisted Code Reviews: AI tools can automatically analyze pull requests for common bugs, style issues, or security vulnerabilities and post comments or suggest fixes, allowing human reviewers to focus on complex logic.</li>
+            <li>Pair Programming Assistants: Tools like GitHub Copilot suggest code as you type, indirectly influencing the version control process by potentially reducing errors in committed code.</li>
+        </ul>
+    </div>
+    <style>
+        *{
+            margin: 0;
+        }
+        #nav{
+            height: 50px;
+            width: auto;
+            background-color: rgb(148, 139, 139);
+            text-align: center;
+        }
+        #nav li{
+            margin-right: 50px;
+            text-align: center;
+            margin-top: 10px;
+            display: inline-block;
+
+        }
+        #main{
+            text-align: center;
+            margin-top: 30px;
+        }
+        #main h1, #main p{
+            max-width: 50%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #main p, #main h2{
+            margin-top: 20px;
+        }
+        a{
+            text-decoration: none;
+            color:black;
+            text-align: center;
+        }
+        #main ul{
+            display: inline-block;
+            text-align: left;
+            margin-top: 10px;
+            max-width: 40%;
+        }
+    </style>
+</body>
+</html>
