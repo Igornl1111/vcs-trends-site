@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+</head>
+<body>
+    <div id="nav">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+       <li><a href="">History</a></li>
+        <li><a href="">Trends</a></li>
+        </ul>
+    </div>
+    <div id="main">
+        <h1>This is my website on github</h1>
+        <p>Welcome at my github page :D</p>
+    </div>
+    <div id="overview">
+        <h2>What VCS is?</h2><br>
+        <p><b>Version control systems (VCS)</b> are essential tools that track changes in files (typically source code)</p>
+        <p>over time, allowing multiple people to collaborate, maintain a history of modifications, and revert</p> 
+        <p>to earlier versions. The evolution of VCS has progressed from early centralized systems, which relied</p> 
+        <p>on a single server, to modern distributed systems.</p>
+    </div>
+    <div id="func">
+        <h2>The core functions shared by all VCS tools</h2>
+        <ul>
+            <li>Repository: The database storing all versioned files and their history.</li>
+            <li>Working Copy: The local checkout of files you edit.</li>
+            <li>Commit: Saving a set of changes to the repository as a new revision.</li>
+            <li>Branch: A parallel line of development used to isolate work on features or fixes.</li>
+            <li>Merge: Integrating changes from one branch into another.</li>
+        </ul>
+    </div>
+    <div id="dist">
+        <h2>The key distinction is between:</h2>
+        <ul>
+            <li>Centralized Version Control (CVCS): Tools like RCS, CVS, and Subversion (SVN) use a single central repository. Collaboration requires network access to this server, which creates a single point of failure.</li>
+            <li>Distributed Version Control (DVCS): Tools like Git and Mercurial give every developer a full copy of the repository and its history. Developers can commit locally (even offline) and later push changes, providing greater flexibility, resilience, and faster operations. DVCS has become the dominant standard.</li>
+        </ul>
+    </div>
+    <style>
+        *{
+            margin: 0;
+        }
+        #overview{
+            text-align: center;
+            margin-top: 30px;
+        }
+        #func, #dist{
+            text-align: center;
+            margin-top: 30px;
+        }
+        #func ul, #dist ul{
+            display: inline-block;
+            text-align: left;
+            margin-top: 10px;
+            max-width: 35%;
+        }
+        #nav{
+            height: 50px;
+            width: auto;
+            background-color: rgb(148, 139, 139);
+            text-align: center;
+        }
+        #nav li{
+            margin-right: 50px;
+            text-align: center;
+            margin-top: 10px;
+            display: inline-block;
+
+        }
+        #main{
+            text-align: center;
+            margin-top: 30px;
+        }
+        #main p{
+            margin-top: 20px;
+        }
+        a{
+            text-decoration: none;
+            color:black;
+            text-align: center;
+        }
+    </style>
+</body>
+</html>
