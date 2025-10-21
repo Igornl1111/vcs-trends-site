@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Page</title>
+</head>
+<body>
+    <div id="nav">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+       <li><a href="history.html">History</a></li>
+        <li><a href="">Trends</a></li>
+        </ul>
+    </div>
+    <div id="main">
+        <h1>Key milestones in VCS history</h1>
+        <table id="tabela">
+            <tr>
+                <th>Year</th>
+                <th>System</th>
+                <th>Type</th>
+                <th>Significance</th>
+            </tr>
+            <tr>
+                <td>1972</td>
+                <td>SCCS (Source Code Control System)</td>
+                <td>Centralized (Early)</td>
+                <td>Developed at Bell Labs, it introduced the basic idea of tracking changes.</td>
+            </tr>
+            <tr>
+                <td>1982</td>
+                <td>RCS (Revision Control System)</td>
+                <td>Local</td>
+                <td>Automated change tracking for individual files using delta storage; lacked network support.</td>
+            </tr>
+            <tr>
+                <td>1986</td>
+                <td>CVS (Concurrent Versions System)</td>
+                <td>Centralized</td>
+                <td>Developed as a front-end to RCS, it introduced a client-server model and networked repositories for project collaboration.</td>
+            </tr>
+            <tr>
+                <td>2000</td>
+                <td>Git and Mercurial</td>
+                <td>Centralized</td>
+                <td>Successor to CVS that introduced atomic commits and better file handling, becoming highly popular by ~2006.</td>
+            </tr>
+            <tr>
+                <td>2005</td>
+                <td>Git and Mercurial</td>
+                <td>Distributed (DVCS)</td>
+                <td>Git was created by Linus Torvalds for the Linux kernel after its license for BitKeeper was revoked. DVCS became a major breakthrough.</td>
+            </tr>
+            <tr>
+                <td>2008</td>
+                <td>GitHub</td>
+                <td>Platform/Hosting</td>
+                <td>Launched a web-based collaboration platform on top of Git, introducing pull requests and greatly accelerating Git's adoption</td>
+            </tr>
+            <tr>
+                <td>2010s</td>
+                <td>Wide Git Adoption</td>
+                <td>Distributed</td>
+                <td>Distributed version control became the new standard, with many projects and companies migrating from older systems (CVS, SVN) to Git.</td>
+            </tr>
+            <tr>
+                <td>2023</td>
+                <td>Large-Scale Growth</td>
+                <td>Platform</td>
+                <td>GitHub reported over 100 million developers using its platform</td>
+            </tr>
+        </table>
+    </div>
+    <style>
+        *{
+            margin: 0;
+        }
+        #nav{
+            height: 50px;
+            width: auto;
+            background-color: rgb(148, 139, 139);
+            text-align: center;
+        }
+        #nav li{
+            margin-right: 50px;
+            text-align: center;
+            margin-top: 10px;
+            display: inline-block;
+
+        }
+        #main{
+            text-align: center;
+            margin-top: 30px;
+        }
+        #main table{
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+        }
+        #main table tr{
+            max-width: 25%;
+        }
+        table, th, td {
+             border: 1px solid black;
+        }
+        a{
+            text-decoration: none;
+            color:black;
+            text-align: center;
+        }
+    </style>
+</body>
+</html>
